@@ -38,9 +38,9 @@ h1{
 h1:hover{
     background: linear-gradient(36deg,#ff0000 0%, #ffff00 40%, #dcdc74 40%, #bbbb7d 40%, #ffff00 40%, #ffff00 40%, #5cfb5c 80%);
     box-shadow: 8px 8px 0px -7px rgba(95,0,128,0.25);
-/* -webkit-box-shadow: 30px 30px 0px -7px rgba(95,0,128,0.25);
+-webkit-box-shadow: 30px 30px 0px -7px rgba(95,0,128,0.25);
 -moz-box-shadow: 30px 30px 0px -7px rgba(95,0,128,0.25);
-    transform: rotate(300deg); */
+    transform: rotate(300deg);
     transform: translateY(-10px);
     color: #000;
 }
