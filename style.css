@@ -1,0 +1,172 @@
+.sky{
+    height: 40%;
+    background-color: skyblue;
+}html, body{
+    height: 100%;
+    width:100%;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .grass, .sky, .road{
+    position: relative;
+  }
+
+  .sky{
+    height: 35%;
+    background: skyblue;
+  }
+  .grass{
+    height: 35%;
+    background-image: linear-gradient(skyblue , rgb(21, 109, 9));
+
+
+}
+h1{
+    position: absolute;
+    left: 600px;
+    right: 2500px;
+    color: #fff;
+    background-image: linear-gradient( skyblue , rgb(21, 109, 9));
+
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+    padding: 5px; 
+}
+h1:hover{
+    background: linear-gradient(36deg,#ff0000 0%, #ffff00 40%, #dcdc74 40%, #bbbb7d 40%, #ffff00 40%, #ffff00 40%, #5cfb5c 80%);
+    box-shadow: 8px 8px 0px -7px rgba(95,0,128,0.25);
+/* -webkit-box-shadow: 30px 30px 0px -7px rgba(95,0,128,0.25);
+-moz-box-shadow: 30px 30px 0px -7px rgba(95,0,128,0.25);
+    transform: rotate(300deg); */
+    transform: translateY(-10px);
+    color: #000;
+}
+  .road{
+    height: 30%;
+    background: rgb(10, 10, 10);
+  box-sizing: border-box;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+  width: 100%;
+}
+
+.line{
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    animation-name: moon;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+.cloud{
+position: absolute;
+}
+.cloud:nth-child(1){
+    width: 200px;
+    top: 100px;
+    opacity: 0.3;
+    animation-name: moon;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+.cloud:nth-child(2){
+    width: 300px;
+    animation-name: moon;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+.mario{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -40px;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: both;
+    /* animation-delay: 2s; */
+    transition-timing-function: cubic-bezier(.96,-0.01,.55,.89);
+}
+.luigi{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 70px;
+    animation-name: drive;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: both;
+    animation-delay:  2s;
+    transition-timing-function: cubic-bezier(.96,-0.01,.55,.89);
+}
+.man{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -110px;
+    animation-name: drive;
+    animation-duration: 90s;
+    transform: translate(100px) !important;
+    animation-iteration-count: infinite;
+    animation-direction: both;
+    animation-delay:  2s;
+    transition-timing-function: cubic-bezier(.96,-0.01,.55,.89);
+}
+.man1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -110px;
+    animation-name: drive;
+    animation-duration: 100s;
+    transform: translate(100px) !important;
+    animation-iteration-count: infinite;
+    animation-direction: both;
+    animation-delay:  2s;
+    transition-timing-function: cubic-bezier(.96,-0.01,.55,.89);
+}
+.man2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -110px;
+    animation-name: drive;
+    animation-duration: 80s;
+    transform: translate(100px) !important;
+    animation-iteration-count: infinite;
+    animation-direction: both;
+    animation-delay:  2s;
+    transition-timing-function: cubic-bezier(.96,-0.01,.55,.89);
+}
+.man3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -110px;
+    animation-name: drive;
+    animation-duration: 60s;
+    transform: translate(100px) !important;
+    animation-iteration-count: infinite;
+    animation-direction: both;
+    animation-delay:  2s;
+    transition-timing-function: cubic-bezier(.96,-0.01,.55,.89);
+}
+
+
+@keyframes drive{
+    from{transform: translate(-100px);}
+    to{transform: translate(1600px);}
+}
+@keyframes moon{
+    from{left: 0;}
+    to{left: 1300px;}
+}
